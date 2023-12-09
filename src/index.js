@@ -51,3 +51,13 @@ class Triangle extends ShapeDimensions {
         return (this.base * this.height) / 2;
     }
 }
+const circle = new Circle("My Circle", "red", 5);
+const rectangle = new Rectangle("My Rectangle", "green", 4, 6);
+const square = new Square("My Square", "blue", 3);
+const triangle = new Triangle("My Triangle", "yellow", 4, 5);
+console.log(`${circle.name} Area: ${circle.calculateArea()}`);
+console.log(`${rectangle.name} Area: ${rectangle.calculateArea()}`);
+console.log(`${square.name} Area: ${square.calculateArea()}`);
+console.log(`${triangle.name} Area: ${triangle.calculateArea()}`);
+rectangle.print();
+square.print();
