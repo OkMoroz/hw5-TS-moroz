@@ -8,6 +8,10 @@ class ShapeDimensions {
   }
 }
 
+interface PrintItem {
+  print(): void;
+}
+
 class Circle extends ShapeDimensions {
   private radius: number;
 
@@ -21,7 +25,7 @@ class Circle extends ShapeDimensions {
   }
 }
 
-class Rectangle extends ShapeDimensions {
+class Rectangle extends ShapeDimensions implements PrintItem {
   public readonly name: string = "Rectangle";
   protected length: number;
   protected width: number;
@@ -43,7 +47,7 @@ class Rectangle extends ShapeDimensions {
   }
 }
 
-class Square extends ShapeDimensions {
+class Square extends ShapeDimensions implements PrintItem {
   public readonly name: string = "Square";
   private side: number;
 
